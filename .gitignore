@@ -1,0 +1,17 @@
+# .DS_Store
+.DS_Store
+
+# datasets
+datasets
+
+# .ipynb_checkpoints
+cnn/*/.ipynb_checkpoints
+rnn/*/.ipynb_checkpoints
+
+# __pycache__/
+cnn/*/__pycache__/
+rnn/*/__pycache__/
+
+# train dirs
+cnn/*/train
+rnn/*/train
