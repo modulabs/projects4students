@@ -1,5 +1,5 @@
 # Projects for students 
-* Final update: 2019. 05. 21.
+* Final update: 2019. 05. 23.
 * All right reserved @ ModuLabs 2019
 
 
@@ -17,7 +17,7 @@
 
 
 
-## CNN projects
+## CNN projects (Image segmentation)
 
 ### Task
 * GIANA dataset으로 위내시경 이미지에서 용종을 segmentation 해보자.
@@ -54,10 +54,43 @@
 
 ### Try some techniques
 * Change model architectures (Custom model)
-  * Try another models (Unet 모델)
+  * Try another models (U-Net 모델)
 * Various regularization methods
 
 
+
+# RNN projects (Sentiment classification)
+
+### Task
+* IMDB 영화사이트에서 50000개의 영화평을 가지고 positive/negative인지 구분해보자.
+* 데이터 불러오기를 제외한 딥러닝 트레이닝 과정을 직접 구현해보는 것이 목표 입니다.
+
+### Dataset
+* [IMDB datasets](https://www.imdb.com/interfaces/)
+
+### Base code
+* Dataset: train, val, test로 split
+* Input data shape: (`batch_size`, `max_sequence_length`)
+* Output data shape: (`batch_size`, 1)
+* Architecture:
+  * RNN을 이용한 간단한 classification 모델 가이드
+  * `Embedding` - `SimpleRNN` - `Dense (with Sigmoid)`
+  * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
+* Training
+  * `model.fit` 사용
+* Evaluation
+  * `model.evaluate` 사용 for test dataset
+
+### Try some techniques
+* Training-epochs 조절
+* Change model architectures (Custom model)
+  * Use another cells (LSTM, GRU, etc.)
+  * Use dropout layers
+* Embedding size 조절
+  * 또는 one-hot vector로 학습
+* Number of words in the vocabulary 변화
+* `pad` 옵션 변화
+* Data augmentation (if possible)
 
 
 
