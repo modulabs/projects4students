@@ -9,7 +9,7 @@
 * [`TensorFlow`](https://www.tensorflow.org) above version 1.13
 * Python 3.6 (recommend Anaconda)
 * Python libraries:
-  * `numpy`, `matplotblib`, `pandas`
+  * `numpy`, `matplotlib`, `pandas`
   * `PIL`, `imageio` for images
   * `fix_yahoo_finance` for stock market prediction
 * Jupyter notebook
